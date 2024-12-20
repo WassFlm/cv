@@ -1,0 +1,84 @@
+.profile-container {
+    margin-top: 50px;
+
+}
+.title-container {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.grey {
+    font-style: normal;
+    color: grey;
+    font-weight: lighter;
+}
+.title-container h1 {
+    font-size: xx-large;
+    margin: 0;
+}
+.status-text {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.status {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: rgb(55, 161, 55);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+.title-button {
+    background-color: rgb(51, 77, 125);
+    border-radius: 10px;
+    min-width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30px;
+    transition-property: filter;
+    transition-duration: .2s;
+}
+.icon span img {
+    object-fit: contain;
+    display: flex;
+    width: 15px;
+    filter: invert();
+}
+.title-button:hover {
+    filter: invert();
+}
+.install {
+    background-color:rgb(68, 68, 68);
+}
+.button-container {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+.profile-info {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px,auto);
+}
+.profile-info img {
+    grid-column: 1/2;
+    width: 100%;
+    object-fit: fill;
+}
+.profile-text {
+    margin-top: 20%;
+}
+.profile-text p1 {
+    color: grey;
+}
+@keyframes pulse {
+    0%   { opacity: 0.6; }
+    50%  { opacity: 1;   }
+    100% { opacity: 0.6; }
+  }
